@@ -34,8 +34,21 @@ public_users.get('/isbn/:isbn',function (req, res) {
 public_users.get('/author/:author',function (req, res) {
   //Write your code here
   author = req.params.author;
-  result = []
-  return res.status(300).json({message: "Yet to be implemented"});
+  result = [];
+  f=0;
+  for(i='1';i<'11';i++){
+    if (books[i].author===author){
+        result.push([i,books[i]])
+        f=1;
+    }
+    }
+   if(f==1){
+    return res.status(200).json({message: "author found, these are list of book details",
+    books:result});
+   }
+
+   return res.status(300).json({message: "author not found"});
+  
 });
 
 // Get all books based on title
