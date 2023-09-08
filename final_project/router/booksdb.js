@@ -2,7 +2,7 @@ let books = {
       1: {"author": "Chinua Achebe","title": "Things Fall Apart", "reviews": {},"isbn":"235" },
       2: {"author": "Hans Christian Andersen","title": "Fairy tales", "reviews": {} ,"isbn":"123"},
       3: {"author": "Dante Alighieri","title": "The Divine Comedy", "reviews": {} ,"isbn":"134"},
-      4: {"author": "Unknown","title": "The Epic Of Gilgamesh", "reviews": {} ,"isbn":"567"},
+      4: {"author": "Unknown","title": "The Epic Of Gilgamesh", "reviews": {1:"very interesting book",2:"insightful"} ,"isbn":"567"},
       5: {"author": "Unknown","title": "The Book Of Job", "reviews": {},"isbn":"345" },
       6: {"author": "Unknown","title": "One Thousand and One Nights", "reviews": {},"isbn":"111" },
       7: {"author": "Samuel Beckett","title": "Nj\u00e1l's Saga", "reviews": {} ,"isbn":"222"},
